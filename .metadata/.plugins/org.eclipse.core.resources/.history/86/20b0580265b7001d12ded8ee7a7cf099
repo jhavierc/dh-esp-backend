@@ -1,0 +1,11 @@
+package co.dh.grupo2.entity;
+
+import java.util.List;
+
+public class Course {
+	
+	private int id;
+	private String name;
+	private List<Chapter> chapters;
+
+}

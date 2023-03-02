@@ -1,0 +1,41 @@
+package co.dh.grupo2.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import co.dh.grupo2.entity.Chapter;
+import co.dh.grupo2.entity.Course;
+import co.dh.grupo2.service.ICourseService;
+import co.dh.grupo2.service.ISuscriptionClient;
+
+public class CouseService implements ICourseService {
+	
+	private ISuscriptionClient suscriptionClient;
+	
+	private List<Course> courses;
+	
+	public CouseService(ISuscriptionClient suscriptionClient) {
+		 this.courses = new ArrayList<>();
+		
+		 List<Chapter> chapters = new ArrayList<>();
+		 chapters.add(new Chapter(1, "Capitulo 1", "www.dh.com/modules/chapter1"));
+		 chapters.add(new Chapter(1, "Capitulo 2", "www.dh.com/modules/chapter2"));
+		 chapters.add(new Chapter(1, "Capitulo 3", "www.dh.com/modules/chapter3"));
+		 chapters.add(new Chapter(1, "Capitulo 4", "www.dh.com/modules/chapter4"));
+		 
+		 this.courses.add(new Course(1, "Esp Backend I", chapters));
+		 this.courses.add(new Course(2, "Base de datos II", chapters));
+		 this.courses.add(new Course(3, "Gestion de producto", chapters));
+		 
+		 this.suscriptionClient = suscriptionClient;
+		
+	}
+
+	@Override
+	public Optional<Course> getById(int courseID, int userID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package co.dh.ccepeda.entity;
+
+public class Plan {
+
+}

@@ -1,0 +1,13 @@
+package co.dh.grupo2;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DhCourseServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DhCourseServiceApplication.class, args);
+	}
+
+}

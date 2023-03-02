@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms-course
+  cloud:
+    config: 
+      uri:
+      - ${CONFIG_SERVER:http://localhost:8888}

@@ -1,0 +1,7 @@
+package co.dh.grupo2.dto;
+
+public class MessageDTO {
+	
+	private String message;
+
+}

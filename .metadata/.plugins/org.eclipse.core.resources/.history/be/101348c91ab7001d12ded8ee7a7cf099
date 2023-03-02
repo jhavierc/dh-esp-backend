@@ -1,0 +1,14 @@
+package co.dh.ccepeda.entity;
+
+import java.util.Date;
+
+public class Suscripcion {
+	
+	private int id;
+	private String startDate;
+	private String endDate;
+	private Plan plan;
+	private int userId;
+	
+
+}

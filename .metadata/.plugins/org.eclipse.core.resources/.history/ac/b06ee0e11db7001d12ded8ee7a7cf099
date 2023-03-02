@@ -1,0 +1,26 @@
+package co.dh.ccepeda.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import co.dh.ccepeda.entity.Suscripcion;
+import co.dh.ccepeda.services.ISuscripcionService;
+import feign.Response;
+
+public class SuscripcionController {
+
+	@Autowired
+	private ISuscripcionService suscripcionService;
+
+	public ResponseEntity<Suscripcion> getSuscriptionByUserId(int userID) {
+
+		Suscripcion s = suscripcionService.findByUserId(userID);
+		if (s != null) {
+			return ResponseEntity.status(HttpStatus.OK).body(s);
+		}
+		return ResponseEntity.status(HttpStatus.NO_CONTENT);
+
+	}
+
+}

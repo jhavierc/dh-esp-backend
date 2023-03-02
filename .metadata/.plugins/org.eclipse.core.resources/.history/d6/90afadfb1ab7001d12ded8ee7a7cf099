@@ -1,0 +1,5 @@
+package co.dh.ccepeda.services;
+
+public interface ISuscripcionService {
+
+}

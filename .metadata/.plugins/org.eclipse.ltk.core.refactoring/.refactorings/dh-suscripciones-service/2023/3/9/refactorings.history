@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;dh-course-service/src/main/java/co.dh.grupo2.entity&apos;&#x0A;- Original project: &apos;dh-suscripciones-service&apos;&#x0A;- Destination element: &apos;dh-course-service/src/main/java/co.dh.grupo2.entity&apos;&#x0A;- Original elements:&#x0A;     co.dh.ccepeda.entity.Plan.java&#x0A;     co.dh.ccepeda.entity.Suscripcion.java" description="Copy compilation units" destination="=dh-course-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.grupo2.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.ccepeda.entity{Plan.java" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.ccepeda.entity{Suscripcion.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1677639617549" units="2" version="1.0"/>
+</session>
