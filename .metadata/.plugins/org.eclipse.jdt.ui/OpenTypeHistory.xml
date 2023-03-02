@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=weather-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.ccepeda.service{IWeather.java[IWeather" modifiers="513" timestamp="1677120597000"/>
-    <typeInfo handle="=dh-suscripciones-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.ccepeda.services{ISuscripcionService.java[ISuscripcionService" modifiers="513" timestamp="1677556203000"/>
-    <typeInfo handle="=dh-course-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;co.dh.grupo2.service{ICourseService.java[ICourseService" modifiers="513" timestamp="1677640460000"/>
-    <typeInfo handle="=dh-course-service/\/Users\/ccepeda\/.m2\/repository\/org\/aspectj\/aspectjweaver\/1.9.7\/aspectjweaver-1.9.7.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.aspectj=/=/maven.artifactId=/aspectjweaver=/=/maven.version=/1.9.7=/=/maven.scope=/compile=/&lt;org.aspectj.bridge(ICommand.class[ICommand" modifiers="1537" timestamp="1644192764000"/>
-</typeInfoHistroy>

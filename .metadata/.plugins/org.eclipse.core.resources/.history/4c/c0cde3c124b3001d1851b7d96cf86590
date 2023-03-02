@@ -1,5 +1,0 @@
-package co.dh.ccepeda.service;
-
-public interface IWeather {
-
-}
