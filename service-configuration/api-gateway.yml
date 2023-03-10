@@ -36,4 +36,4 @@ eureka:
     endpoints: 
       web:
         exposure:
-          include: api-gateway
+          include: gateway
