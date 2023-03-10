@@ -7,4 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/vaninagodoydh/spring-cloud-configServer-openFeign
+          uri: https://github.com/jhavierc/spring-cloud-fintech-gateway

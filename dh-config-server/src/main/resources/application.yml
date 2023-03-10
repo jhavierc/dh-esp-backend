@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jhavierc/spring-cloud-configServer-openFeign
+          uri: https://github.com/jhavierc/spring-cloud-fintech-gateway
           force-pull: true
           search-paths: service-configuration
           default-label: main
