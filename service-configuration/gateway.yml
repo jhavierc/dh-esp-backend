@@ -14,10 +14,10 @@ spring:
           uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
-        - id: movies
-          uri: lb://movies-service
-          predicates:
-            - Path=/movies/**              
+        #- id: movies #endpoiunt privados
+         # uri: lb://movies-service
+          #predicates:
+           # - Path=/movies/**              
 
 info:
   app:
