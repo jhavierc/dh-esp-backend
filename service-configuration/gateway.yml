@@ -10,14 +10,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: catalog
+        - id: catalog-service
           uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
-        #- id: movies #endpoiunt privados
-         # uri: lb://movies-service
-          #predicates:
-           # - Path=/movies/**              
 
 info:
   app:
@@ -25,10 +21,16 @@ info:
 
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      default-zone: http://localhost:8761/eureka
-  instance:
-    hostname: localhost
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceURL:
+      defaultZone: http://localhost:8761/eureka
+  management:
+    endpoint:
+      gateway:
+        enabled: true
+    endpoints: 
+      web:
+        exposure:
+          include: gateway
 
