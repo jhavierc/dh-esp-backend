@@ -21,6 +21,18 @@ queue:
     
  message: registro up
  
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+  info:
+    env:
+      enabled: true
+  endpoint:
+    info:
+      enabled: true
+ 
 eureka:
   instance:
     hostname: localhost
