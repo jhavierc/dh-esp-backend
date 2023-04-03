@@ -29,3 +29,5 @@ eureka:
  queue:
   serie:
     name: NewSerie
+    
+ message: registro up
