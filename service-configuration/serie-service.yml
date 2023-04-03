@@ -14,7 +14,13 @@ spring:
     password: guest
     host: localhost
     port: 5672
-      
+
+queue:
+  serie:
+    name: NewSerie
+    
+ message: registro up
+ 
 eureka:
   instance:
     hostname: localhost
@@ -26,8 +32,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
       
       
- queue:
-  serie:
-    name: NewSerie
-    
- message: registro up
+
