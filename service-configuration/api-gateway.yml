@@ -17,7 +17,11 @@ spring:
         - id: movies
           uri: lb://movies-service
           predicates:
-            - Path=/movies/**              
+            - Path=/movies/**
+        - id: series
+          uri: lb://series-service
+          predicates:
+            - Path=/series/**   
 
 info:
   app:
