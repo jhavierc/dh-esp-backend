@@ -10,14 +10,18 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: catalog-service
+        - id: catalog
           uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
+        - id: movies
+          uri: lb://movies-service
+          predicates:
+            - Path=/movies/**
         - id: series
           uri: lb://series-service
           predicates:
-            - Path=/api/v1/series/**  
+            - Path=/api/v1/series/** 
 
 info:
   app:
