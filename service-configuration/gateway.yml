@@ -27,7 +27,7 @@ spring:
           predicates:
             - Path=/movies/**
         - id: series
-          uri: lb://series-service
+          uri: lb://serie-service
           predicates:
             - Path=/api/v1/series/** 
 
