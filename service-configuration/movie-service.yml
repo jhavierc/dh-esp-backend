@@ -22,6 +22,11 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
 
 message: hello from movie-service
 
@@ -30,6 +35,26 @@ management:
     web:
       exposure:
         include: '*'
+
+
+queue:
+  serie:
+    name: NewMovie
+
+message: registro up
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+  info:
+    env:
+      enabled: true
+  endpoint:
+    info:
+      enabled: true
+
 eureka:
   instance:
     hostname: localhost
