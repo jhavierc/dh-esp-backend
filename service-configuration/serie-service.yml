@@ -20,10 +20,10 @@ spring:
 queue:
   serie:
     name: NewSerie
-    
- message: registro up
- 
- management:
+
+message: registro up
+
+management:
   endpoints:
     web:
       exposure:
@@ -44,6 +44,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-      
-      
-
