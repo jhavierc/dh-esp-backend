@@ -29,7 +29,7 @@ spring:
     port: 5672
 
 queue:
-  serie:
+  movie:
     name: NewMovie
 
 message: registro up
