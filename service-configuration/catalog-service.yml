@@ -18,7 +18,10 @@ spring:
     password: guest
     host: localhost
     port: 5672
-    
+   zipkin:
+      base-url: http://localhost:9411/
+      enabled: true
+      
 message: hello from catalog-service
 
 queue:
