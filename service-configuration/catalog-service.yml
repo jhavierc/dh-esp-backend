@@ -16,6 +16,12 @@ spring:
     
 message: hello from catalog-service
 
+queue:
+  serie:
+    name: NewSerie
+  movie:
+    name: NewMovie
+
 management:
   endpoints:
     web:
