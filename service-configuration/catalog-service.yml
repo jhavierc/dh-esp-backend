@@ -29,12 +29,6 @@ queue:
     name: NewSerie
   movie:
     name: NewMovie
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
         
 eureka:
   instance:
@@ -46,3 +40,46 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: circuitbreakers,circuitbreakerevents,health,info,ratelimiters,metrics
+  health:
+    circuitbreakers:
+      enabled: 'true'
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      serie-service:
+        slidingWindowType: COUNT_BASED
+        failureRateThreshold: '50'
+        automaticTransitionFromOpenToHalfOpenEnabled: 'true'
+        allowHealthIndicatorToFail: 'false'
+        registerHealthIndicator: 'true'
+        slidingWindowSize: '5'
+        permittedNumberOfCallsInHalfOpenState: '3'
+        waitDurationInOpenState: '15000'
+      movie-service:
+        slidingWindowType: COUNT_BASED
+        failureRateThreshold: '50'
+        automaticTransitionFromOpenToHalfOpenEnabled: 'true'
+        allowHealthIndicatorToFail: 'false'
+        registerHealthIndicator: 'true'
+        slidingWindowSize: '5'
+        permittedNumberOfCallsInHalfOpenState: '3'
+        waitDurationInOpenState: '15000'
+  retry:
+    instances:
+      serie-service:
+        maxAttempts: '3'
+        waitDuration: '1000'
+        retryExceptions[0]: feign.FeignException$InternalServerError
+      movie-service:
+        maxAttempts: '3'
+        waitDuration: '1000'
+        retryExceptions[0]: feign.FeignException$InternalServerError
