@@ -73,6 +73,15 @@ resilience4j:
         slidingWindowSize: '5'
         permittedNumberOfCallsInHalfOpenState: '3'
         waitDurationInOpenState: '15000'
+      composition-service:
+        slidingWindowType: COUNT_BASED
+        failureRateThreshold: '50'
+        automaticTransitionFromOpenToHalfOpenEnabled: 'true'
+        allowHealthIndicatorToFail: 'false'
+        registerHealthIndicator: 'true'
+        slidingWindowSize: '1'
+        permittedNumberOfCallsInHalfOpenState: '3'
+        waitDurationInOpenState: '10000'
   retry:
     instances:
       serie-service:
