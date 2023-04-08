@@ -92,3 +92,7 @@ resilience4j:
         maxAttempts: '3'
         waitDuration: '1000'
         retryExceptions[0]: feign.FeignException$InternalServerError
+      composition-service:
+        maxAttempts: '3'
+        waitDuration: '1000'
+        retryExceptions[0]: feign.FeignException$InternalServerError
